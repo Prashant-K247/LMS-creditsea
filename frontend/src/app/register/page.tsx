@@ -53,7 +53,7 @@ export default function RegisterPage() {
             <input
               type="text"
               disabled={loading}
-              placeholder="John Doe"
+              placeholder="Your Name"
               className="w-full border border-slate-300 px-3 py-2.5 rounded text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-slate-800 transition-colors disabled:bg-slate-50 disabled:text-slate-500"
               value={form.fullName}
               onChange={(e) => setForm({ ...form, fullName: e.target.value })}

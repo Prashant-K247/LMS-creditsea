@@ -40,7 +40,8 @@ export default function CollectionPage() {
       setUtrStates(prev => ({ ...prev, [loanId]: "" }));
       setAmountStates(prev => ({ ...prev, [loanId]: "" }));
       loadData();
-    } catch {
+    } catch(error) {
+      console.error(error);
       toast.error("Failed to archive inward balance record change");
     } finally {
       setSubmittingId(null);

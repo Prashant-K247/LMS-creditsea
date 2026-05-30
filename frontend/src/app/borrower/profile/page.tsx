@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { createProfile } from "@/services/profileService";
@@ -60,7 +61,7 @@ export default function ProfilePage() {
               <input
                 type="text"
                 placeholder="ABCDE1234F"
-                className="w-full border border-slate-300 px-3 py-2.5 rounded text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-slate-800 transition-colors uppercase"
+                className="w-full border border-slate-300 px-3 py-2.5 rounded text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-slate-800 transition-colors"
                 value={form.pan}
                 onChange={(e) => setForm({ ...form, pan: e.target.value })}
                 required
