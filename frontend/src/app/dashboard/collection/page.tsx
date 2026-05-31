@@ -41,11 +41,11 @@ export default function CollectionPage() {
       setAmountStates(prev => ({ ...prev, [loanId]: "" }));
       loadData();
     } catch(error) {
-      console.error(error);
-      toast.error("Failed to archive inward balance record change");
+        console.error(error);
+        toast.error("Something is Wrong. Please check Details and Try Again");
     } finally {
       setSubmittingId(null);
-    }
+    } 
   };
 
   return (

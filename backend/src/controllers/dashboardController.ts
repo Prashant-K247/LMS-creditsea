@@ -133,11 +133,7 @@ export const recordPayment =async ( req: AuthRequest, res: Response)=>{
         const loanId = Array.isArray(req.params.loanId) ? req.params.loanId[0] : req.params.loanId;
 
         const loan = await Loan.findById(loanId);
-        console.log("Payment Amount:", amount);
-        console.log(
-          "Outstanding:",
-          loan.outstandingBalance
-        );
+      
         if (!loan) {
             return res.status(404).json({ message: "Loan not found" });
         }
