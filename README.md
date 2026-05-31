@@ -1,5 +1,7 @@
 # Loan Management System (LMS)
 
+Video Walkthrough - https://drive.google.com/file/d/1JNTpdxcofWnp5pkjhyR2A78xlcDtKNTw/view?usp=drive_link
+
 A full-stack loan management application built with **Next.js** (frontend) and **Express.js** (backend), featuring role-based access control, loan application processing, and payment tracking.
 
 ## Table of Contents
